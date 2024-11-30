@@ -1,38 +1,26 @@
 /*======================================
 	Theme Default
 ========================================*/
-
-.ibm-plex-sans-devanagari-light {
-  font-family: "IBM Plex Sans Devanagari", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.ibm-plex-sans-devanagari-regular {
-  font-family: "IBM Plex Sans Devanagari", sans-serif;
+@font-face {
+  font-family: "agrandir-regular";
+  src: url("../webfonts/agrandir-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
-.ibm-plex-sans-devanagari-medium {
-  font-family: "IBM Plex Sans Devanagari", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.ibm-plex-sans-devanagari-semibold {
-  font-family: "IBM Plex Sans Devanagari", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.ibm-plex-sans-devanagari-bold {
-  font-family: "IBM Plex Sans Devanagari", sans-serif;
-  font-weight: 700;
+@font-face {
+  font-family: "agrandir-bold";
+  src: url("../webfonts/agrandir-bold.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 
 /* Custom Variable CSS */
+:root {
+  /* fonts Family */
+  --company-font-medium: "agrandir-bold";
+  --company-font-regular: "agrandir-regular";
+}
 
 *,
 *::after *::before {
@@ -66,7 +54,7 @@ p {
   }
 }
 html {
-  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-family: "Roboto", sans-serif;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -111,15 +99,6 @@ template {
 }
 a {
   text-decoration: none;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
 }
 a:active,
 a:hover {
@@ -247,7 +226,7 @@ input,
 select,
 optgroup,
 textarea {
-  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -273,11 +252,10 @@ li {
 .select2-container--default .select2-selection--single,
 .select2-container--default .select2-search--dropdown .select2-search__field,
 .select2-dropdown {
-  border: 1px solid #e0ebff !important;
+  border: 1px solid #c1c1c1 !important;
 }
 .select2-container--default .select2-selection--single {
   background: transparent;
-  border-radius: 30px;
 }
 
 /* CK Editor Reset */
@@ -483,7 +461,9 @@ div.ck.ck-editor__main .ck-content p {
 .company-border-top {
   border-top: 1px solid #eceaff;
 }
-
+.company-regular-font {
+  font-family: var(--company-font-regular);
+}
 .in-right {
   align-items: end;
 }
@@ -497,7 +477,7 @@ h6 {
   margin: 0 0 15px;
 }
 p {
-  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #6c798b;
 }
 h1,
@@ -570,7 +550,6 @@ label {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-
 dfn,
 cite,
 em,
@@ -588,7 +567,7 @@ address {
 }
 pre {
   background: #eee;
-  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 1.6;
@@ -601,7 +580,7 @@ code,
 kbd,
 tt,
 var {
-  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-size: 0.9375rem;
 }
@@ -1193,13 +1172,13 @@ object {
   z-index: 2;
   overflow: hidden;
   text-align: center;
-  border-radius: 30px;
+  border-radius: 10px;
   line-height: 58px;
   justify-content: center;
   align-items: center;
   display: inline-flex;
   font-weight: 500;
-  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .company-btn:hover {
   transition: all 0.5s ease;
@@ -1363,7 +1342,7 @@ svg {
   background-color: #111111;
 }
 /* .company-btn.company-btn__thrid:hover{
-    background-color: #2B74FE;
+    background-color: #2b74fe;
 }*/
 .company-bg-cover {
   background-position: center;
@@ -1684,7 +1663,7 @@ svg {
   padding: 0px;
   position: relative;
   font-size: 16px;
-  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-family: "agrandir-regular";
 }
 .offcanvas-menu li a:hover {
   color: #2b74fe;
