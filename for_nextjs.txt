@@ -1,0 +1,42 @@
+1. Home-1 need Video section  -- https://prnt.sc/CpvBjW6vBRVi
+2. Home-2 Need funfact section  -- https://prnt.sc/to2LdNBxRbTv
+3. Need CTA information in footer  --- https://prnt.sc/WPP7iFnDTjZo
+4. Innerpages need Breadcrumbs Images ---- https://prnt.sc/9A7jZf2-HlA7
+5. About us page need funfact  -----  https://prnt.sc/E441CBF-FuWh
+6. Blogs category need category item count  ---  https://prnt.sc/da8fDSsQE6br
+7. Blog details need Author name , Image, Description, slug   --  https://prnt.sc/9GBzbZ0e5eS3
+8. Blog comment not working    --- working now
+9. Service review need callall api  --- already have pagination
+10. Influencer details author image, author name   ---- already have
+11. About page need partnars section  ---   https://prnt.sc/Z0Izy4HtgXEF
+12. Home 1 Api social icon Missing (hero)  ---  use svg code icon, amio korchi
+13. Home-1 need Subscriber list and client count  --- https://prnt.sc/5QFlBqtskn5P
+14. Home-1 Need faq  ---  https://prnt.sc/x62w6kBaWTjF
+15. Home-2 why choose-us list icon missing  --  svg code use koren, amio korchi
+16. home-3 working Process Change data  --- ei 4ta tab er text localization diye manage hobe, and icon gula svg code https://prnt.sc/B3pfRO9Rasi7 , ami evabei korchi. r ei content gula dynamic hobe https://prnt.sc/Zc9Ctl6X_gPL https://prnt.sc/QBhSf-OUNY13  ----- ei section ( https://prnt.sc/CJz0kileY5qB ) er data ei object e ache https://prnt.sc/2dTAKEF5tanw , https://prnt.sc/aZRGucRqPBSi
+
+17. User Dashboard orders status cases  -- see ref
+18. Support ticket cors error  ----  ok
+19. Create account smtp issue -- ok
+20. Coupon api  - -- https://prnt.sc/Zcfl3STE8GvC , if coupon applied, tahole payment korar somoy coupon pass korte hobe https://prnt.sc/crPyWpr0o5ct , jodi apply na kore tahole attr pass korar dorkar nai
+21. Strip Api -- added
+22. Rozorpay Cors error  --- error asle dekhte hobe, face korle dak diyen
+23. Most Important. Protected apis dont giving 401 error. giving a loging page html with 200 (When unauthorized )  ------ header set hocche na, tai error ase
+
+
+
+
+
+ref - 17:
+
+@if ($order->order_status == 'approved_by_influencer')
+Active
+
+@elseif ($order->order_status == 'complete')
+completed
+
+@elseif ($order->order_status == 'order_decliened_by_influencer' || $order->order_status == 'order_decliened_by_client')
+Declined
+@elseif ($order->order_status == 'awaiting_for_influencer_approval')
+Awaiting
+@endif
